@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="./index.html" class="logo">Home</a>
+      </header>
+      <img src="https://i.postimg.cc/qRykjmX0/bg.jpg" class="bg" />
+      <img src="./img/zain-ul.png" class="bird" />
+      <div class="content">
+        <h2>This is Front End<br /><span>developer</span></h2>
+        <p>
+          Front End Web Developer, is responsible for using their knowledge of
+          programming languages to code user-side applications, including visual
+          elements like menu bars, clickable buttons and the overall layout of
+          websites or web applications.
+        </p>
+        <a href="#">Contact NOw</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"
+            ><img src="https://i.postimg.cc/prvP7Dqj/facebook.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="https://i.postimg.cc/28zz77qR/twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="https://i.postimg.cc/PJMdkPRR/instagram.png"
+          /></a>
+        </li>
+      </ul>
+      
+    </section>
+
+    <script>
+      // © 2022 vkive
+      // link to download the proyect
+      // https://github.com/vkive/stunning-parallax.git
+      // Follow me on Codepen
+
+      document.addEventListener("mousemove", function (e) {
+        const bg = document.querySelector(".bg");
+        const bird = document.querySelector(".bird");
+        const content = document.querySelector(".content");
+
+        bg.style.width = 100 + e.pageX / 100 + "%";
+        bg.style.height = 100 + e.pageX / 100 + "%";
+
+        bird.style.right = 100 + e.pageX / 2 + "px";
+        content.style.left = 100 + e.pageX / 2 + "px";
+      });
+    </script>
+  </body>
+</html>
